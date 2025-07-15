@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | Les Chroniques du JDR</title>
+  <link rel="stylesheet" href="CSS/stylearticles.css">
+  <link rel="stylesheet" href="CSS/responsivearticles1024.css">
+  <link rel="stylesheet" href="CSS/responsivearticles390.css">
+  <script src="JS/script_articles.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER CLASSIQUE -->
+<header class="site-header">
+  <img src="images/Logo.png" alt="Logo gauche" class="logo">
+  
+  <h1 class="site-title">
+    <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
+    <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
+  </h1>
+  
+  <img src="images/Logo.png" alt="Logo droite" class="logo">
+</header>
+
+  <!-- MENU CLASSIQUE EXISTANT -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-btn">Accueil</a></li>
+      <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
+      <li><a href="#" class="nav-btn">Univers</a></li>
+      <li><a href="#" class="nav-btn">Conseils</a></li>
+      <li><a href="#" class="nav-btn">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- MENU BURGER MOBILE -->
+<div class="burger-container">
+  <div class="burger-button" aria-label="Menu mobile" role="button" tabindex="0">
+    <img src="images/burger_icon.png" alt="Menu mobile" class="burger-icon">
+  </div>
+<nav class="burger-menu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="#">Qu’est-ce que le JDR ?</a></li>
+    <li><a href="#">Univers</a></li>
+    <li><a href="#">Conseils</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</div>
+
+  <!-- BANNIÈRE ARTICLES -->
+  <section class="banniere-articles">
+    <div class="banniere-content-articles">
+      <h2>Toutes les chroniques</h2>
+    </div>
+  </section>
+
+  <!-- SECTION ARTICLES RECENTS -->
+
+<section class="Liste-articles">
+  <h2 class="visually-hidden">Liste des articles récents</h2>
+  <div class="filtre-categorie">
+  <label for="categorie-select">Filtrer par catégorie :</label>
+  <select id="categorie-select">
+    <option value="toutes">Toutes</option>
+    <option value="creation">Création</option>
+    <option value="histoire">Histoire</option>
+    <option value="accessoires">Accessoires</option>
+    <option value="astuces">Astuces</option>
+    <option value="scenarios">Scénarios</option>
+  </select>
+</div>
+<div class="article-filter-buttons">
+  <button id="masquer-lus" class="filter-button">Masquer les articles lus</button>
+  <button id="afficher-tous" class="filter-button">Afficher tous les articles</button>
+</div>
+    <div class="articles-wrapper">
+      <div class="article article1 creation histoire astuces toutes scenarios accessoires">
+        <div class="article-image" style="background-image: url('Images/article1_jdr.webp');"></div>
+          <div class="article-text">
+      <h3>Par où commencer ?</h3>
+      <p>Vous êtes curieux du JDR mais vous ne savez pas par où débuter ? Voici les bases pour bien démarrer une aventure autour d’une table.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article2 creation toutes">
+    <div class="article-image" style="background-image: url('Images/article2_jdr_440x440.webp');"></div>
+    <div class="article-text">
+      <h3>Créer un personnage vivant en 5 étapes.</h3>
+      <p>Nom, race, classe, motivation... Je vous guide pas à pas pour concevoir un personnage mémorable et immersif.</p>
+      <a href="article.html" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article3 accessoires toutes">
+    <div class="article-image" style="background-image: url('Images/article3_final_jdr_440x440.webp');"></div>
+    <div class="article-text">
+      <h3>Le pouvoir des dés : hasard ou destin ?</h3>
+      <p>Que serait un JDR sans ses fameux jets de dés ? On explore leur impact sur la narration et la tension dramatique.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article4 histoire scenarios creation toutes">
+    <div class="article-image" style="background-image: url('Images/article_4_mj_conteur.webp');"></div>
+    <div class="article-text">
+      <h3>Le rôle du MJ : entre conteur et arbitre.</h3>
+      <p>Plongez dans les responsabilités et libertés du Maître du Jeu.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+    <div class="article article5 creation histoire toutes">
+    <div class="article-image" style="background-image: url('Images/article_5_univers_rpg.webp');"></div>
+    <div class="article-text">
+      <h3>Créer un univers de JDR en partant de zéro.</h3>
+      <p>Cartes, cultures, mythes... les bases d’un monde vivant.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article6 astuces accessoires toutes">
+    <div class="article-image" style="background-image: url('Images/article_6_conseils_rpg_nouvelle.webp');"></div>
+    <div class="article-text">
+      <h3>10 conseils pour une première partie réussie.</h3>
+      <p>Préparation, communication, fun… ce qu’il faut vraiment savoir.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+  </section>
+
+<div class="explorer-button-container">
+  <a href="#" class="explorer-button">Explorez davantage</a>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo">
+    <p class="footer-copyright">© 2025 - Les Chroniques du JDR. Tous droits réservés.</p>
+  </div>
+
+  <div class="footer-right">
+    <p class="footer-title">Suivez-moi sur les réseaux sociaux :</p>
+    <div class="footer-socials">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/instagram.png" alt="Instagram">
+      <img src="images/linkedin.png" alt="LinkedIn">
+      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
+    </div>
+    <nav class="footer-menu">
+      <a href="index.html">Accueil</a>
+        <span class="footer-separator">|</span>
+      <a href="articles.html">Articles</a>
+        <span class="footer-separator">|</span>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <p class="footer-mention">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
+  </div>
+</footer>
+
+<!-- FOOTER MOBILE -->
+
+<footer class="footer-mobile">
+  <div class="footer-left-mobile">
+
+    <nav class="footer-menu-mobile">
+      <a href="index.html">Accueil</a>
+      <span class="footer-separator-mobile">|</span>
+      <a href="articles.html">Articles</a>
+      <span class="footer-separator-mobile">|</span>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+
+    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo-mobile">
+
+    <p class="footer-copyright-mobile">
+      © 2025 - Les Chroniques du JDR.<br>
+      Tous droits réservés.
+    </p>
+  </div>
+
+  <div class="footer-right-mobile">
+    <p class="footer-social-title-mobile">Suivez-moi sur les réseaux sociaux :</p>
+    <div class="footer-socials-mobile">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/instagram.png" alt="Instagram">
+      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
+      <img src="images/linkedin.png" alt="LinkedIn">
+    </div>
+    <p class="footer-mention-mobile">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
+  </div>
+</footer>
+
+  <!-- JS MENU BURGER -->
+<script>
+  const burgerBtn = document.querySelector(".burger-button");
+  const burgerContainer = document.querySelector(".burger-container");
+
+  burgerBtn.addEventListener("click", () => {
+    burgerContainer.classList.toggle("active");
+  });
+    burgerBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    burgerContainer.classList.toggle("active");
+  }
+});
+</script>
+</body>
+</html>

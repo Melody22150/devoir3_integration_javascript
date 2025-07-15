@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Les Chroniques du JDR</title>
+  <link rel="stylesheet" href="CSS/styleindex.css">
+  <link rel="stylesheet" href="CSS/responsiveindex1024.css">
+  <link rel="stylesheet" href="CSS/responsiveindex390.css">
+  <script src="JS/script_index.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER CLASSIQUE -->
+<header class="site-header">
+  <img src="images/Logo.png" alt="Logo gauche" class="logo">
+  
+  <h1 class="site-title">
+    <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
+    <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
+  </h1>
+  
+  <img src="images/Logo.png" alt="Logo droite" class="logo">
+</header>
+
+  <!-- MESSAGE DE BIENVENUE -->
+
+<div id="welcome-popup" class="popup hidden">
+  <div class="popup-content">
+    <label for="username">Entrez votre prénom :</label>
+    <input type="text" id="username" name="username" />
+    <button id="submit-name">Valider</button>
+  </div>
+</div>
+
+<div id="welcome-message" class="welcome-banner hidden">
+  <p id="personalized-message"></p>
+</div>
+
+  <!-- MENU CLASSIQUE EXISTANT -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-btn">Accueil</a></li>
+      <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
+      <li><a href="#" class="nav-btn">Univers</a></li>
+      <li><a href="#" class="nav-btn">Conseils</a></li>
+      <li><a href="#" class="nav-btn">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- MENU BURGER MOBILE -->
+<div class="burger-container">
+  <div class="burger-button" aria-label="Menu mobile" role="button" tabindex="0">
+    <img src="images/burger_icon.png" alt="Menu mobile" class="burger-icon">
+  </div>
+<nav class="burger-menu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="#">Qu’est-ce que le JDR ?</a></li>
+    <li><a href="#">Univers</a></li>
+    <li><a href="#">Conseils</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+</div>
+
+<!-- SECTION BANNIERE -->
+<section class="banniere">
+  <div class="banniere-content">
+    <h2>Plongez dans l’univers du JDR</h2>
+    <p>Conseils, découvertes, aventures : le guide du rôliste débutant ou aguerri.</p>
+    <a href="articles.html" class="btn-banniere">Explorez les chroniques</a>
+  </div>
+</section>
+
+<!-- SECTION INTRO + MINI BIO -->
+<section class="intro-bio">
+  <!-- Intro -->
+  <div class="intro">
+    <h2>Découvrir le JDR</h2>
+    <p>
+      "Le Jeu de Rôle, ou JDR, est une activité de narration partagée, où les joueurs incarnent des personnages dans un monde imaginaire..."
+    </p>
+    <a href="#" class="intro-button">Qu’est-ce que le JDR ?</a>
+  </div>
+
+  <!-- Séparation verticale -->
+  <div class="separator"></div>
+
+  <!-- Mini Bio -->
+<div class="mini-bio">
+  <div class="mini-bio-header">
+    <h3>À propos de moi...</h3>
+    <div class="avatar"></div>
+  </div>
+  <p>
+    Exploratrice d’univers fantastiques et archiviste des chroniques oubliées, je voyage de table en table pour partager mes découvertes rôlistes.<br>
+    <em>J’ai survécu à 3 campagnes, 2 MJ sadiques, et un D20 capricieux.</em>
+  </p>
+  <a href="a-propos.html" class="bio-button">En savoir plus ?</a>
+</div>
+</section>
+
+<!-- SECTION ARTICLES RECENTS -->
+<section class="articles-recents">
+  <h2 class="section-title">Articles Récents</h2>
+</section>
+
+<section class="articles-wrapper">
+
+  <div class="article article1">
+    <div class="article-image" style="background-image: url('Images/article1_jdr.webp');"></div>
+    <div class="article-text">
+      <h3>Par où commencer ?</h3>
+      <p>Vous êtes curieux du JDR mais vous ne savez pas par où débuter ? Voici les bases pour bien démarrer une aventure autour d’une table.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article2">
+    <div class="article-image" style="background-image: url('Images/article2_jdr_440x440.webp');"></div>
+    <div class="article-text">
+      <h3>Créer un personnage vivant en 5 étapes.</h3>
+      <p>Nom, race, classe, motivation... Je vous guide pas à pas pour concevoir un personnage mémorable et immersif.</p>
+      <a href="article.html" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article3">
+    <div class="article-image" style="background-image: url('Images/article3_final_jdr_440x440.webp');"></div>
+    <div class="article-text">
+      <h3>Le pouvoir des dés : hasard ou destin ?</h3>
+      <p>Que serait un JDR sans ses fameux jets de dés ? On explore leur impact sur la narration et la tension dramatique.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+  <div class="article article4">
+    <div class="article-image" style="background-image: url('Images/article_4_mj_conteur.webp');"></div>
+    <div class="article-text">
+      <h3>Le rôle du MJ : entre conteur et arbitre.</h3>
+      <p>Plongez dans les responsabilités et libertés du Maître du Jeu.</p>
+      <a href="#" class="article-button">Lire la suite</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- Mini Bio - Version Mobile -->
+<div class="mini-bio-mobile-wrapper">
+  <div class="trait-horizontal"></div>
+
+  <div class="mini-bio-mobile">
+    <img src="images/Cadre_mini_bio.png" alt="cadre mini bio" class="cadre-bio">
+    
+    <div class="mini-bio-content">
+      <div class="mini-bio-header">
+        <h3>À propos de moi...</h3>
+        <div class="avatar"></div>
+      </div>
+      <p>
+        Exploratrice d’univers fantastiques et archiviste des chroniques oubliées, je voyage de table en table pour partager mes découvertes rôlistes.
+        <em>J’ai survécu à 3 campagnes, 2 MJ sadiques, et un D20 capricieux.</em>
+      </p>
+      <a href="a-propos.html" class="bio-button">En savoir plus ?</a>
+    </div>
+  </div>
+
+  <div class="trait-horizontal"></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo">
+    <p class="footer-copyright">© 2025 - Les Chroniques du JDR. Tous droits réservés.</p>
+  </div>
+
+  <div class="footer-right">
+    <p class="footer-title">Suivez-moi sur les réseaux sociaux :</p>
+    <div class="footer-socials">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/instagram.png" alt="Instagram">
+      <img src="images/linkedin.png" alt="LinkedIn">
+      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
+    </div>
+    <nav class="footer-menu">
+      <a href="index.html">Accueil</a>
+        <span class="footer-separator">|</span>
+      <a href="articles.html">Articles</a>
+        <span class="footer-separator">|</span>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+    <p class="footer-mention">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
+  </div>
+</footer>
+
+<!-- FOOTER MOBILE -->
+ 
+<footer class="footer-mobile">
+  <div class="footer-left-mobile">
+
+    <nav class="footer-menu-mobile">
+      <a href="index.html">Accueil</a>
+      <span class="footer-separator-mobile">|</span>
+      <a href="articles.html">Articles</a>
+      <span class="footer-separator-mobile">|</span>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+
+    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo-mobile">
+
+    <p class="footer-copyright-mobile">
+      © 2025 - Les Chroniques du JDR.<br>
+      Tous droits réservés.
+    </p>
+  </div>
+
+  <div class="footer-right-mobile">
+    <p class="footer-social-title-mobile">Suivez-moi sur les réseaux sociaux :</p>
+    <div class="footer-socials-mobile">
+      <img src="images/facebook.png" alt="Facebook">
+      <img src="images/instagram.png" alt="Instagram">
+      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
+      <img src="images/linkedin.png" alt="LinkedIn">
+    </div>
+    <p class="footer-mention-mobile">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
+  </div>
+</footer>
+
+  <!-- JS MENU BURGER -->
+<script>
+  const burgerBtn = document.querySelector(".burger-button");
+  const burgerContainer = document.querySelector(".burger-container");
+
+  burgerBtn.addEventListener("click", () => {
+    burgerContainer.classList.toggle("active");
+  });
+
+  burgerBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    burgerContainer.classList.toggle("active");
+  }
+});
+</script>
+
+  
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* RESPONSIVE TABLETTE (1024px) */
+
+@media (max-width: 1024px) {
+
+ /* TITRE + LOGO */   
+  .site-header {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .site-title {
+    font-size: 65px;
+    text-align: center;
+    margin: 0 auto;
+    flex: 1;
+  }
+
+ /* MENU D'ACCUEIL */
+
+   .main-nav {
+    padding: 8px 0;
+    margin-top: 20px;
+  }
+
+  .nav-inner {
+    padding: 0 15px;
+  }
+
+  .nav-list {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+  .main-nav ul {
+    gap: 50px;
+  }
+
+  .main-nav .nav-btn {
+    font-size: 22px; 
+    padding: 8px 20px; 
+    border-radius: 16px;
+  } 
+  .banniere-articles {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 300px; 
+    background: url("../images/banniere_fantasy_motif_1440x300_dark.webp") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+  }
+  .banniere-content-articles h2 {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'LondrinaSolid-Regular';
+    font-size: 110px;
+    color: #FFCC8C;
+  }
+
+  /* ARTICLES RECENTS */
+  .articles-recents {
+  font-size: 35px; 
+  margin-left: 30px; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.articles-wrapper {
+  gap: 80px;         
+  padding: 0 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 42vw;    
+  max-width: 420px;  
+  height: 420px;     
+  position: relative;
+  flex-shrink: 0;
+}
+
+.article-text {
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.article-text h3 {
+  font-size: 20px; 
+}
+
+.article-text p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.article-button {
+  font-size: 26px; 
+  padding: 10px 20px;
+  border-radius: 30px;
+  bottom: 15px;
+  right: 15px;
+}
+
+.article-image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+/* FOOTER */
+
+.site-footer {
+  height: 323px;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.footer-left {
+  width: 400px; 
+  height: 323px;
+  position: relative;
+}
+
+.footer-logo {
+  width: 293px; 
+  height: 293px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-copyright {
+  font-size: 14px;
+  right: 15px;
+  bottom: 5px;
+}
+
+.footer-right {
+  flex: 1;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.footer-title,
+.footer-mention,
+.footer-credit {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.footer-menu {
+  font-size: 16px;
+  margin-top: -145px;
+  margin-left: -10px;
+}
+
+.footer-menu a {
+  font-size: 16px;
+}
+
+.footer-socials img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-left: 200px;
+}
+
+.footer-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding-left: 200px;
+}
+
+.footer-mention {
+  text-align: right;        
+  margin-right: 30px;    
+  font-size: 14px;         
+  margin-bottom: -2px;
+ }
+}
+
+@media (max-width: 1024px) {
+/* Bouton Masquer les articles lus */
+.article-filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px auto;
+  margin-left: -390px;
+}
+
+.filter-button {
+  padding: 15px 30px;
+  background-color: #FFCC8C;
+  color: #653800;
+  font-family: 'LondrinaSolid-Regular', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px #FFF0DC;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
+}}
