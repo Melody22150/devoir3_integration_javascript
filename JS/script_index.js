@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Vérifie si un prénom est déjà stocké
   const storedName = localStorage.getItem("userName");
-
-  function sanitize(input) {
+ 
     // Supprime les balises HTML ou scripts potentiels
+    function sanitize(input) {
     return input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
