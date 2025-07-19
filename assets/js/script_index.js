@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     message.textContent = `Bienvenue dans les Chroniques, ${safeName} !`;
     banner.classList.remove("hidden");
 
-    // Faire disparaître après 5 secondes
+    // Faire disparaître après 3 secondes
     setTimeout(() => {
       banner.classList.add("fade-out");
-    }, 5000);
+    }, 3000);
 
     // Cacher définitivement après l'animation
     banner.addEventListener(
@@ -58,6 +58,22 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Prénom non valide saisi");
     }
   });
+});
+
+
+ // JS MENU BURGER //
+
+  const burgerBtn = document.querySelector(".burger-button");
+  const burgerContainer = document.querySelector(".burger-container");
+
+  burgerBtn.addEventListener("click", () => {
+    burgerContainer.classList.toggle("active");
+  });
+
+  burgerBtn.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    burgerContainer.classList.toggle("active");
+  }
 });
 
 // Confirmation chargement
