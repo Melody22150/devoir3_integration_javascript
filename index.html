@@ -11,44 +11,30 @@
 </head>
 <body>
 
-  <!-- HEADER CLASSIQUE -->
 <header class="site-header">
-  <img src="./assets/images/Logo.png" alt="Logo gauche" class="logo">
-  
-  <h1 class="site-title">
-    <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
-    <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
-  </h1>
-  
-  <img src="./assets/images/Logo.png" alt="Logo droite" class="logo">
-</header>
-
-  <!-- MESSAGE DE BIENVENUE -->
-
-<div id="welcome-popup" class="popup hidden">
-  <div class="popup-content">
-    <label for="username">Entrez votre prénom :</label>
-    <input type="text" id="username" name="username" />
-    <button id="submit-name">Valider</button>
+  <div class="header-top">
+    <img src="./assets/images/Logo.png" alt="Logo gauche" class="logo">
+    
+    <h1 class="site-title">
+      <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
+      <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
+    </h1>
+    
+    <img src="./assets/images/Logo.png" alt="Logo droite" class="logo">
   </div>
-</div>
 
-<div id="welcome-message" class="welcome-banner hidden">
-  <p id="personalized-message"></p>
-</div>
-
-  <!-- MENU CLASSIQUE EXISTANT -->
-<nav class="main-nav">
-  <div class="nav-inner">
-    <ul class="nav-list">
-      <li><a href="index.html" class="nav-btn">Accueil</a></li>
-      <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
-      <li><a href="#" class="nav-btn">Univers</a></li>
-      <li><a href="#" class="nav-btn">Conseils</a></li>
-      <li><a href="#" class="nav-btn">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- MENU CLASSIQUE -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-btn">Accueil</a></li>
+        <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
+        <li><a href="#" class="nav-btn">Univers</a></li>
+        <li><a href="#" class="nav-btn">Conseils</a></li>
+        <li><a href="#" class="nav-btn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- MENU BURGER MOBILE -->
 <div class="burger-container">
@@ -64,6 +50,21 @@
     <li><a href="#">Contact</a></li>
   </ul>
 </nav>
+</div>
+</header>
+
+  <!-- MESSAGE DE BIENVENUE -->
+
+<div id="welcome-popup" class="popup hidden">
+  <div class="popup-content">
+    <label for="username">Entrez votre prénom :</label>
+    <input type="text" id="username" name="username" />
+    <button id="submit-name">Valider</button>
+  </div>
+</div>
+
+<div id="welcome-message" class="welcome-banner hidden">
+  <p id="personalized-message"></p>
 </div>
 
 <!-- SECTION BANNIERE -->
@@ -90,7 +91,7 @@
   <div class="separator"></div>
 
   <!-- Mini Bio -->
-<div class="mini-bio">
+<aside class="mini-bio">
   <div class="mini-bio-header">
     <h3>À propos de moi...</h3>
     <div class="avatar"></div>
@@ -100,7 +101,7 @@
     <em>J’ai survécu à 3 campagnes, 2 MJ sadiques, et un D20 capricieux.</em>
   </p>
   <a href="./pages/a-propos.html" class="bio-button">En savoir plus ?</a>
-</div>
+</aside>
 </section>
 
 <!-- SECTION ARTICLES RECENTS -->
@@ -110,41 +111,41 @@
 
 <section class="articles-wrapper">
 
-  <div class="article article1">
-    <div class="article-image" style="background-image: url('./assets/images/article1_jdr.webp');"></div>
-    <div class="article-text">
-      <h3>Par où commencer ?</h3>
-      <p>Vous êtes curieux du JDR mais vous ne savez pas par où débuter ? Voici les bases pour bien démarrer une aventure autour d’une table.</p>
-      <a href="#" class="article-button">Lire la suite</a>
-    </div>
+<article class="article article1">
+  <div class="article-image" style="background-image: url('./assets/images/article1_jdr.webp');"></div>
+  <div class="article-text">
+    <h3>Par où commencer ?</h3>
+    <p>Vous êtes curieux du JDR mais vous ne savez pas par où débuter ? Voici les bases pour bien démarrer une aventure autour d’une table.</p>
+    <a href="#" class="article-button">Lire la suite</a>
   </div>
+</article>
 
-  <div class="article article2">
+  <article class="article article2">
     <div class="article-image" style="background-image: url('./assets/images/article2_jdr_440x440.webp');"></div>
     <div class="article-text">
       <h3>Créer un personnage vivant en 5 étapes.</h3>
       <p>Nom, race, classe, motivation... Je vous guide pas à pas pour concevoir un personnage mémorable et immersif.</p>
       <a href="./pages/article.html" class="article-button">Lire la suite</a>
     </div>
-  </div>
+  </article>
 
-  <div class="article article3">
+  <article class="article article3">
     <div class="article-image" style="background-image: url('./assets/images/article3_final_jdr_440x440.webp');"></div>
     <div class="article-text">
       <h3>Le pouvoir des dés : hasard ou destin ?</h3>
       <p>Que serait un JDR sans ses fameux jets de dés ? On explore leur impact sur la narration et la tension dramatique.</p>
       <a href="#" class="article-button">Lire la suite</a>
     </div>
-  </div>
+  </article>
 
-  <div class="article article4">
+  <article class="article article4">
     <div class="article-image" style="background-image: url('./assets/images/article_4_mj_conteur.webp');"></div>
     <div class="article-text">
       <h3>Le rôle du MJ : entre conteur et arbitre.</h3>
       <p>Plongez dans les responsabilités et libertés du Maître du Jeu.</p>
       <a href="#" class="article-button">Lire la suite</a>
     </div>
-  </div>
+  </article>
 
 </section>
 
@@ -152,7 +153,7 @@
 <div class="mini-bio-mobile-wrapper">
   <div class="trait-horizontal"></div>
 
-  <div class="mini-bio-mobile">
+  <aside class="mini-bio-mobile">
     <img src="./assets/images/Cadre_mini_bio.png" alt="cadre mini bio" class="cadre-bio">
     
     <div class="mini-bio-content">
@@ -166,7 +167,7 @@
       </p>
       <a href="./pages/a-propos.html" class="bio-button">En savoir plus ?</a>
     </div>
-  </div>
+  </aside>
 
   <div class="trait-horizontal"></div>
 </div>
