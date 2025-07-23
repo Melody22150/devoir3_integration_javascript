@@ -4,46 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Les Chroniques du JDR</title>
-  <link rel="stylesheet" href="CSS/styleabout.css">
-  <link rel="stylesheet" href="CSS/responsiveabout1024.css">
-  <link rel="stylesheet" href="CSS/responsiveabout390.css">
-  <script src="JS/script_a-propos.js" defer></script>
+  <link rel="stylesheet" href="../assets/css/styleabout.css">
+  <link rel="stylesheet" href="../assets/css/responsive_1024/responsiveabout1024.css">
+  <link rel="stylesheet" href="../assets/css/responsive_390/responsiveabout390.css">
+  <script src="../assets/js/script_a-propos.js" defer></script>
 </head>
 <body>
 
-  <!-- HEADER CLASSIQUE -->
 <header class="site-header">
-  <img src="images/Logo.png" alt="Logo gauche" class="logo">
-  
-  <h1 class="site-title">
-    <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
-    <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
-  </h1>
-  
-  <img src="images/Logo.png" alt="Logo droite" class="logo">
-</header>
-
-  <!-- MENU CLASSIQUE EXISTANT -->
-<nav class="main-nav">
-  <div class="nav-inner">
-    <ul class="nav-list">
-      <li><a href="index.html" class="nav-btn">Accueil</a></li>
-      <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
-      <li><a href="#" class="nav-btn">Univers</a></li>
-      <li><a href="#" class="nav-btn">Conseils</a></li>
-      <li><a href="#" class="nav-btn">Contact</a></li>
-    </ul>
+  <div class="header-top">
+    <img src="../assets/images/Logo.png" alt="Logo gauche" class="logo">
+    
+    <h1 class="site-title">
+      <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
+      <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
+    </h1>
+    
+    <img src="../assets/images/Logo.png" alt="Logo droite" class="logo">
   </div>
-</nav>
+
+  <!-- MENU CLASSIQUE -->
+  <nav class="main-nav">
+    <div class="nav-inner">
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-btn">Accueil</a></li>
+        <li><a href="#" class="nav-btn">Qu’est-ce que le JDR ?</a></li>
+        <li><a href="#" class="nav-btn">Univers</a></li>
+        <li><a href="#" class="nav-btn">Conseils</a></li>
+        <li><a href="#" class="nav-btn">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- MENU BURGER MOBILE -->
 <div class="burger-container">
   <div class="burger-button" aria-label="Menu mobile" role="button" tabindex="0">
-    <img src="images/burger_icon.png" alt="Menu mobile" class="burger-icon">
+    <img src="../assets/images/burger_icon.png" alt="Menu mobile" class="burger-icon">
   </div>
 <nav class="burger-menu">
   <ul>
-    <li><a href="index.html">Accueil</a></li>
+    <li><a href="./index.html">Accueil</a></li>
     <li><a href="#">Qu’est-ce que le JDR ?</a></li>
     <li><a href="#">Univers</a></li>
     <li><a href="#">Conseils</a></li>
@@ -51,6 +51,7 @@
   </ul>
 </nav>
 </div>
+</header>
 
   <!-- BANNIÈRE ARTICLES -->
   <section class="banniere-articles">
@@ -63,7 +64,7 @@
  <section class="about-section">
   <h2 class="visually-hidden">About</h2>
   <div class="avatar-container">
-    <img src="images/avatar.webp" alt="Avatar" class="avatar-image">
+    <img src="/assets/images/avatar.webp" alt="Avatar" class="avatar-image">
   </div>
   <div class="intro-text">
     <p class="intro-quote">
@@ -165,7 +166,7 @@
 <section class="about-button">
   <h2 class="visually-hidden">Bouton retour</h2>
 <div class="about-button-wrapper">
-  <a href="index.html" class="btn-retour-home Retour">Retour à l’accueil</a>
+  <a href="../index.html" class="btn-retour-home Retour">Retour à l’accueil</a>
 </div>
 </section>
 
@@ -173,24 +174,24 @@
 
 <footer class="site-footer">
   <div class="footer-left">
-    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo">
+    <img src="../assets/images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo">
     <p class="footer-copyright">© 2025 - Les Chroniques du JDR. Tous droits réservés.</p>
   </div>
 
   <div class="footer-right">
     <p class="footer-title">Suivez-moi sur les réseaux sociaux :</p>
     <div class="footer-socials">
-      <img src="images/facebook.png" alt="Facebook">
-      <img src="images/instagram.png" alt="Instagram">
-      <img src="images/linkedin.png" alt="LinkedIn">
-      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
+      <img src="../assets/images/facebook.png" alt="Facebook">
+      <img src="../assets/images/instagram.png" alt="Instagram">
+      <img src="../assets/images/linkedin.png" alt="LinkedIn">
+      <img src="../assets/images/reseaux-sociaux.png" alt="Autres réseaux">
     </div>
     <nav class="footer-menu">
-      <a href="index.html">Accueil</a>
+      <a href="../index.html">Accueil</a>
         <span class="footer-separator">|</span>
-      <a href="articles.html">Articles</a>
+      <a href="../pages/articles.html">Articles</a>
         <span class="footer-separator">|</span>
-      <a href="a-propos.html">À propos</a>
+      <a href="../pages/a-propos.html">À propos</a>
     </nav>
     <p class="footer-mention">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
   </div>
@@ -202,14 +203,14 @@
   <div class="footer-left-mobile">
 
     <nav class="footer-menu-mobile">
-      <a href="index.html">Accueil</a>
+      <a href="../index.html">Accueil</a>
       <span class="footer-separator-mobile">|</span>
-      <a href="articles.html">Articles</a>
+      <a href="../pages/articles.html">Articles</a>
       <span class="footer-separator-mobile">|</span>
-      <a href="a-propos.html">À propos</a>
+      <a href="../pages/a-propos.html">À propos</a>
     </nav>
 
-    <img src="images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo-mobile">
+    <img src="../assets/images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo-mobile">
 
     <p class="footer-copyright-mobile">
       © 2025 - Les Chroniques du JDR.<br>
@@ -217,34 +218,17 @@
     </p>
   </div>
 
-    <div class="footer-right-mobile">
+  <div class="footer-right-mobile">
     <p class="footer-social-title-mobile">Suivez-moi sur les réseaux sociaux :</p>
     <div class="footer-socials-mobile">
-      <img src="images/facebook.png" alt="Facebook">
-      <img src="images/instagram.png" alt="Instagram">
-      <img src="images/reseaux-sociaux.png" alt="Autres réseaux">
-      <img src="images/linkedin.png" alt="LinkedIn">
+      <img src="../assets/images/facebook.png" alt="Facebook">
+      <img src="../assets/images/instagram.png" alt="Instagram">
+      <img src="../assets/images/linkedin.png" alt="LinkedIn">
+      <img src="../assets/images/reseaux-sociaux.png" alt="Autres réseaux">
     </div>
     <p class="footer-mention-mobile">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
   </div>
 </footer>
-
-
-<!-- JS MENU BURGER -->
-<script>
-  const burgerBtn = document.querySelector(".burger-button");
-  const burgerContainer = document.querySelector(".burger-container");
-
-  burgerBtn.addEventListener("click", () => {
-    burgerContainer.classList.toggle("active");
-  });
-
-    burgerBtn.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    burgerContainer.classList.toggle("active");
-  }
-});
-</script>
 
 </body>
 </html>

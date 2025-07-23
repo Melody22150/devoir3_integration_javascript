@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Nova Cut';
-  src: url('../Fonts/NovaCut.ttf') format('truetype');
+  src: url('../fonts/NovaCut.ttf') format('truetype');
 }
 
 /* GENERAL */
@@ -17,16 +17,22 @@ body {
 
 /* HEADER */
 .site-header {
-  max-width: 1350px;
-  padding-top: 54px;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  padding-top: 54px;
   padding-left: 30px;
   padding-right: 30px;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* LOGO */
 .logo {
@@ -38,11 +44,11 @@ body {
 .site-title {
   font-size: 90px;
   font-weight: 400;
-  flex: 1;
   text-align: center;
   margin: 0; 
   color: #FFCC8C;
   font-family: 'Nova Cut', sans-serif;
+  flex: 1;
 }
 
 /* MENU D'ACCUEIL */
@@ -52,7 +58,7 @@ body {
   border-width: 4px 0px;
   border-style: solid;
   border-color: #FFF0DC;
-  padding: 10px 0;
+  padding: 10px 85px 10px 85px;
   margin-top: 40px;
 }
 .nav-inner {
@@ -80,7 +86,7 @@ body {
 
 @font-face {  
   font-family: 'Livvic-Black';
-  src: url('../Fonts/Livvic-Black.ttf') format('truetype');
+  src: url('../fonts/Livvic-Black.ttf') format('truetype');
 }
 
 .main-nav .nav-btn {
@@ -110,7 +116,7 @@ body {
   margin-bottom: 80px;
   width: 100%;
   height: 300px; 
-  background: url("../images/banniere_fantasy_motif_1440x300_dark.webp") center/cover no-repeat;
+  background: url("/assets/images/banniere_fantasy_motif_1440x300_dark.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
