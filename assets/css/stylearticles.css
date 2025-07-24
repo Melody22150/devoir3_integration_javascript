@@ -436,10 +436,6 @@ box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
   margin-bottom: -20px;
 }
 
-.burger-icon {
-  display: none;
-}
-
 @font-face {
   font-family: 'Livvic-Bold';
   src: url('../fonts/Livvic-Bold.ttf');
@@ -521,3 +517,29 @@ box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
   background-color: #FFF0DC;
   color: #653800;
 }
+
+  .burger-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    margin-top: -15px;
+    margin-left: 310px;
+    z-index: 1001;
+    background-color: #FFCC8C; /* Beige parchemin */
+    border: 2px solid #FFF0DC; /* Brun cuir */
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .burger-line {
+    width: 100%;
+    height: 4px;
+    background-color: #653800;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }

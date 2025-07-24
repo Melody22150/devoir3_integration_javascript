@@ -36,27 +36,58 @@
     display: inline-block;
   }
 }
-@media (max-width: 390px) {
 
   /* BOUTON BURGER */
 
-  .burger-icon {
-    width: 32px;
-    height: 32px;
-    display: block;
+@media (max-width: 390px) {
+  .burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
     margin-top: -15px;
     margin-left: 310px;
-    cursor: pointer;
+    z-index: 1001;
+    background-color: #FFCC8C; /* Beige parchemin */
+    border: 2px solid #FFF0DC; /* Brun cuir */
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   }
 
+  .burger-line {
+    width: 100%;
+    height: 4px;
+    background-color: #653800;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
 
+  /* Animation "croix" si actif */
+  .burger-button.active .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-button.active .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-button.active .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+@media (max-width: 390px) {
 /* MENU BURGER */
 
 .burger-menu {
   display: none;
   position: absolute;
   top: 90px;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -20%) scale(0.9);
   transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
@@ -113,7 +144,6 @@
   display: block;
 }
 }
-
 /* Cacher menu burger en dehors de 390px */
 @media (min-width: 391px) {
   .burger-container {

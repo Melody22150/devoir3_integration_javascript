@@ -63,18 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
  // JS MENU BURGER //
 
-  const burgerBtn = document.querySelector(".burger-button");
-  const burgerContainer = document.querySelector(".burger-container");
+  const burgerButton = document.querySelector('.burger-button');
+  const burgerContainer = document.querySelector('.burger-container');
 
-  burgerBtn.addEventListener("click", () => {
+  burgerButton.addEventListener('click', () => {
+    const expanded = burgerButton.getAttribute("aria-expanded") === "true" || false;
+    burgerButton.setAttribute("aria-expanded", !expanded);
     burgerContainer.classList.toggle("active");
+    burgerButton.classList.toggle("active");
   });
-
-  burgerBtn.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    burgerContainer.classList.toggle("active");
-  }
-});
 
 // Confirmation chargement
 console.log("Script de la page d'accueil chargé.");
