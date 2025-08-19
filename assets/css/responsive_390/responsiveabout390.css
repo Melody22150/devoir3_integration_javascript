@@ -38,11 +38,9 @@
   }
 }
 
-@media (max-width: 390px) {
-
   /* BOUTON BURGER */
 
-
+@media (max-width: 390px) {
   .burger-button {
     display: flex;
     flex-direction: column;
@@ -69,6 +67,18 @@
     transition: all 0.3s ease;
   }
 
+  /* Animation "croix" si actif */
+  .burger-button.active .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-button.active .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-button.active .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 
 
 /* MENU BURGER */
