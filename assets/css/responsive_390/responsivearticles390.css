@@ -177,7 +177,7 @@
 
 @font-face {
     font-family: 'LondrinaSolid-Regular';
-    src: url('../Fonts/LondrinaSolid-Regular.ttf');
+    src: url('/assets/fonts/LondrinaSolid-Regular.ttf');
 }
 
 .banniere-content-articles {
@@ -351,8 +351,9 @@ box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
 
 @font-face {
     font-family: 'Livvic-Regular';
-    src: url('../Fonts/Livvic-Regular.ttf');
+    src: url('/assets/fonts/Livvic-Regular.ttf');
 }
+
 .footer-menu-mobile {
   display: flex;
   flex-direction: row;
@@ -475,7 +476,7 @@ box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
 
 @font-face {
   font-family: 'Livvic-SemiBold';
-  src: url('../Fonts/Livvic-SemiBold.ttf');
+  src: url('/assets/fonts/Livvic-SemiBold.ttf');
 }
 
 .filtre-categorie {
@@ -488,7 +489,7 @@ box-shadow: 0 6px 10px #FFF0DC, 0 6px 10px rgba(0, 0, 0, 0.35);
 
 @font-face {
   font-family: 'Livvic-Medium';
-  src: url('../Fonts/Livvic-Medium.ttf');
+  src: url('/assets/fonts/Livvic-Medium.ttf');
 }
 
 #categorie-select {
