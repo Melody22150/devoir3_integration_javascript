@@ -124,6 +124,11 @@
   justify-content: center;
 }
 
+@font-face {
+    font-family: 'Livvic-Black';
+    src: url('/assets/fonts/Livvic-Black.ttf');
+}
+
 .burger-menu a {
   display: block;
   width: fit-content;
@@ -178,7 +183,7 @@
 
 @font-face {
     font-family: 'LondrinaSolid-Regular';
-    src: url('../Fonts/LondrinaSolid-Regular.ttf');
+    src: url('/assets/fonts/LondrinaSolid-Regular.ttf');
 }
 
 .banniere-content-articles {
@@ -229,6 +234,11 @@
     object-fit: cover;
   }
 
+  @font-face {
+    font-family: 'Livvic-SemiBold';
+    src: url('/assets/fonts/Livvic-SemiBold.ttf');
+  }
+
   /* ABOUT - TEXTE INTRO */
 
   .intro-text {
@@ -247,12 +257,22 @@
     text-align: center;
   }
 
+  @font-face {
+    font-family: 'RohzaOne-Regular';
+    src: url('/assets/fonts/RozhaOne-Regular.ttf');
+  }
+
   .police-speciale-intro {
     font-family: 'RohzaOne-Regular';
     font-size: 60px;
     font-weight: 500;
     color: #DA9845;
     font-style: normal;
+  }
+
+    @font-face {
+    font-family: 'Livvic-SemiBoldItalic';
+    src: url('/assets/fonts/Livvic-SemiBoldItalic.ttf');
   }
 
   .police-speciale-bonjour {
@@ -283,6 +303,11 @@
     margin: 60px auto 0 auto;
   }
 
+@font-face {
+    font-family: 'Livvic-Bold';
+    src: url('/assets/fonts/Livvic-Bold.ttf');
+  }
+
   .about-qui-suis-je-title {
     font-size: 38px;
     line-height: 48px;
@@ -292,6 +317,11 @@
     font-family: 'Livvic-Bold', sans-serif;
     font-weight: 700;
     font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Livvic-Medium';
+    src: url('/assets/fonts/Livvic-Medium.ttf');
   }
 
   .about-qui-suis-je-description {
@@ -320,6 +350,11 @@
     background-color: #DA9845;
     transform: rotate(0deg);
   }
+
+  @font-face {
+    font-family: 'Livvic-Italic';
+    src: url('/assets/fonts/Livvic-Italic.ttf');
+}
 
   .about-qui-suis-je-subtext {
     font-family: 'Livvic-Italic', sans-serif;
@@ -570,8 +605,9 @@
 
 @font-face {
     font-family: 'Livvic-Regular';
-    src: url('../Fonts/Livvic-Regular.ttf');
+    src: url('/assets/fonts/Livvic-Regular.ttf');
 }
+
 .footer-menu-mobile {
   display: flex;
   flex-direction: row;
@@ -595,6 +631,11 @@
 .footer-separator-mobile {
   font-weight: bold;
   color: #FFCC8C;
+}
+
+@font-face {
+    font-family: 'Livvic-LightItalic';
+    src: url('/assets/fonts/Livvic-LightItalic.ttf');
 }
 
 .footer-copyright-mobile {

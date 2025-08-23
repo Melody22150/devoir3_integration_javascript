@@ -125,6 +125,11 @@
   justify-content: center;
 }
 
+@font-face {
+    font-family: 'Livvic-Black';
+    src: url('/assets/fonts/Livvic-Black.ttf');
+}
+
 .burger-menu a {
   display: block;
   width: fit-content;
@@ -178,7 +183,7 @@
 
 @font-face {
     font-family: 'LondrinaSolid-Regular';
-    src: url('../Fonts/LondrinaSolid-Regular.ttf');
+    src: url('/assets/fonts/LondrinaSolid-Regular.ttf');
 }
 
 .banniere-content-articles {
@@ -222,6 +227,11 @@
   }
 }
 
+@font-face {
+    font-family: 'Livvic-MediumItalic';
+    src: url('/assets/fonts/Livvic-MediumItalic.ttf');
+}
+
 @media (max-width: 390px) {
 
 /* ==== MÉTADONNÉES ==== */
@@ -239,6 +249,11 @@
   z-index: auto;
 }
 
+@font-face {
+    font-family: 'Livvic-Bold';
+    src: url('/assets/fonts/Livvic-Bold.ttf');
+}
+
 /* ==== INTRODUCTION ==== */
 .article2-intro p {
   position: relative;
@@ -252,6 +267,11 @@
   margin-bottom: 60px;
   max-width: 1450px;
   margin: 10px;
+}
+
+@font-face {
+    font-family: 'Livvic-BlackItalic';
+    src: url('/assets/fonts/Livvic-BlackItalic.ttf');
 }
 
 /* ==== CONTENU ÉTAPES ==== */
@@ -283,11 +303,6 @@
   margin-right: 40px;
   text-align: center;
 
-}
-
-@font-face {
-  font-family: 'Livvic-MediumItalic';
-  src: url('../Fonts/Livvic-MediumItalic.ttf');
 }
 
 .highlight-line {
@@ -386,7 +401,7 @@
 
 @font-face {
     font-family: 'Livvic-Regular';
-    src: url('../Fonts/Livvic-Regular.ttf');
+    src: url('/assets/fonts/Livvic-Regular.ttf');
 }
 .footer-menu-mobile {
   display: flex;
@@ -411,6 +426,11 @@
 .footer-separator-mobile {
   font-weight: bold;
   color: #FFCC8C;
+}
+
+@font-face {
+    font-family: 'Livvic-LightItalic';
+    src: url('/assets/fonts/Livvic-LightItalic.ttf');
 }
 
 .footer-copyright-mobile {
