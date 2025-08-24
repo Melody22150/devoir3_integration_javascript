@@ -4,27 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles | Les Chroniques du JDR</title>
-  <link rel="stylesheet" href="../assets/css/stylearticles.css">
-  <link rel="stylesheet" href="../assets/css/responsive_1024/responsivearticles1024.css">
-  <link rel="stylesheet" href="../assets/css/responsive_390/responsivearticles390.css">
+  <link rel="stylesheet" href="../assets/css/style_articles.css">
+  <link rel="stylesheet" href="../assets/css/responsive/responsive_articles.css">
   <script src="../assets/js/script_articles.js" defer></script>
 </head>
 <body>
+
+<!-- HEADER -->
 
 <header class="site-header">
   <div class="header-top">
     <img src="../assets/images/Logo.png" alt="Logo gauche" class="logo">
     
     <h1 class="site-title">
-      <span class="titre-desktop">LES CHRONIQUES DU JDR </span>
-      <span class="titre-mobile">LES CHRONIQUES DU JDR</span>
+      LES CHRONIQUES DU JDR
     </h1>
     
     <img src="../assets/images/Logo.png" alt="Logo droite" class="logo">
   </div>
 
-  <!-- MENU CLASSIQUE -->
-  <nav class="main-nav">
+  <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+    <span class="sr-only">Ouvrir le menu</span>
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+
+ <nav id="main-nav" class="main-nav">
     <div class="nav-inner">
       <ul class="nav-list">
         <li><a href="../index.html" class="nav-btn">Accueil</a></li>
@@ -35,24 +39,6 @@
       </ul>
     </div>
   </nav>
-
-  <!-- MENU BURGER MOBILE -->
-<div class="burger-container" aria-label="Menu" aria-expanded="false">
-  <button class="burger-button" aria-label="Ouvrir le menu" aria-expanded="false">
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-    <span class="burger-line"></span>
-  </button>
-<nav class="burger-menu">
-  <ul>
-    <li><a href="../index.html">Accueil</a></li>
-    <li><a href="#">Qu’est-ce que le JDR ?</a></li>
-    <li><a href="#">Univers</a></li>
-    <li><a href="#">Conseils</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-</div>
 </header>
 
   <!-- BANNIÈRE ARTICLES -->
@@ -97,7 +83,7 @@
     <div class="article-text">
       <h3>Créer un personnage vivant en 5 étapes.</h3>
       <p>Nom, race, classe, motivation... Je vous guide pas à pas pour concevoir un personnage mémorable et immersif.</p>
-      <a href="../pages/article.html" class="article-button">Lire la suite</a>
+      <a href="../pages/article_2.html" class="article-button">Lire la suite</a>
     </div>
   </article>
 
@@ -144,7 +130,6 @@
 </div>
 
 <!-- FOOTER -->
-
 <footer class="site-footer">
   <div class="footer-left">
     <img src="../assets/images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo">
@@ -153,55 +138,35 @@
 
   <div class="footer-right">
     <p class="footer-title">Suivez-moi sur les réseaux sociaux :</p>
+
     <div class="footer-socials">
-      <img src="../assets/images/facebook.png" alt="Facebook">
-      <img src="../assets/images/instagram.png" alt="Instagram">
-      <img src="../assets/images/linkedin.png" alt="LinkedIn">
-      <img src="../assets/images/reseaux-sociaux.png" alt="Autres réseaux">
+      <a href="#" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="../assets/images/facebook.png" alt="Facebook">
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="../assets/images/instagram.png" alt="Instagram">
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="../assets/images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Autres réseaux">
+        <img src="../assets/images/reseaux-sociaux.png" alt="Autres réseaux">
+      </a>
     </div>
-    <nav class="footer-menu">
+
+    <nav class="footer-menu" aria-label="Liens de pied de page">
       <a href="../index.html">Accueil</a>
-        <span class="footer-separator">|</span>
+      <span class="footer-separator">|</span>
       <a href="../pages/articles.html">Articles</a>
-        <span class="footer-separator">|</span>
-      <a href="../pages/a-propos.html">À propos</a>
+      <span class="footer-separator">|</span>
+      <a href="../pages/about.html">À propos</a>
     </nav>
+
     <p class="footer-mention">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
   </div>
 </footer>
 
-<!-- FOOTER MOBILE -->
-
-<footer class="footer-mobile">
-  <div class="footer-left-mobile">
-
-    <nav class="footer-menu-mobile">
-      <a href="../index.html">Accueil</a>
-      <span class="footer-separator-mobile">|</span>
-      <a href="../pages/articles.html">Articles</a>
-      <span class="footer-separator-mobile">|</span>
-      <a href="../pages/a-propos.html">À propos</a>
-    </nav>
-
-    <img src="../assets/images/Logo.png" alt="Logo Les Chroniques du JDR" class="footer-logo-mobile">
-
-    <p class="footer-copyright-mobile">
-      © 2025 - Les Chroniques du JDR.<br>
-      Tous droits réservés.
-    </p>
-  </div>
-
-  <div class="footer-right-mobile">
-    <p class="footer-social-title-mobile">Suivez-moi sur les réseaux sociaux :</p>
-    <div class="footer-socials-mobile">
-      <img src="../assets/images/facebook.png" alt="Facebook">
-      <img src="../assets/images/instagram.png" alt="Instagram">
-      <img src="../assets/images/linkedin.png" alt="LinkedIn">
-      <img src="../assets/images/reseaux-sociaux.png" alt="Autres réseaux">
-    </div>
-    <p class="footer-mention-mobile">Projet réalisé dans le cadre de la formation DWWM - ENACO</p>
-  </div>
-</footer>
+<button id="backToTop" title="Retour en haut">↑</button>
 
 </body>
 </html>

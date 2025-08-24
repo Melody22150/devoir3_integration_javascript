@@ -61,17 +61,150 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
- // JS MENU BURGER //
+// JS MENU BURGER
+const navToggle = document.querySelector('.nav-toggle');
+const mainNav = document.getElementById('main-nav');
 
-  const burgerButton = document.querySelector('.burger-button');
-  const burgerContainer = document.querySelector('.burger-container');
-
-  burgerButton.addEventListener('click', () => {
-    const expanded = burgerButton.getAttribute("aria-expanded") === "true" || false;
-    burgerButton.setAttribute("aria-expanded", !expanded);
-    burgerContainer.classList.toggle("active");
-    burgerButton.classList.toggle("active");
+if (navToggle && mainNav) {
+  navToggle.addEventListener('click', () => {
+    const open = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!open));
   });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.focus();
+    }
+  });
+}
 
 // Confirmation chargement
 console.log("Script de la page d'accueil chargé.");
+
+// Bouton retour en haut
+const backToTopBtn = document.getElementById("backToTop");
+
+// Affiche le bouton quand on scroll vers le bas
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) { // apparaît après 300px de défilement
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// Clique → remonte en haut de page
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // défilement doux
+  });
+});
+
+// Déplacer la mini-bio sous les articles en mobile (≤ 420px)
+(function(){
+  const miniBio = document.querySelector('.mini-bio');
+  const articlesWrapper = document.querySelector('.articles-wrapper');
+  if (!miniBio || !articlesWrapper) return;
+
+  const mqMobile = window.matchMedia('(max-width: 420px)');
+  const originalParent = miniBio.parentElement;
+  const originalNext = miniBio.nextElementSibling;
+
+  const relocateMiniBio = () => {
+    if (mqMobile.matches) {
+      if (miniBio.parentElement !== articlesWrapper.parentElement) {
+        articlesWrapper.insertAdjacentElement('afterend', miniBio);
+      }
+    } else {
+      if (originalParent) {
+        if (originalNext && originalNext.parentElement === originalParent) {
+          originalParent.insertBefore(miniBio, originalNext);
+        } else {
+          originalParent.appendChild(miniBio);
+        }
+      }
+    }
+  };
+
+  relocateMiniBio();
+  mqMobile.addEventListener('change', relocateMiniBio);
+})();
+
+// Déplacer le menu du footer en mobile (≤ 420px)
+(function(){
+  const footerMenu = document.querySelector('.footer-menu');
+  const footerLeft = document.querySelector('.footer-left');
+  const footerLogo = document.querySelector('.footer-logo');
+  const mqMobile = window.matchMedia('(max-width: 420px)');
+
+  if (!footerMenu || !footerLeft || !footerLogo) return;
+
+  const originalParent = footerMenu.parentElement;
+  const originalNext = footerMenu.nextElementSibling;
+
+  const relocateFooterMenu = () => {
+    if (mqMobile.matches) {
+      // place le menu au-dessus du logo dans footer-left
+      footerLeft.insertBefore(footerMenu, footerLogo);
+    } else {
+      // remet le menu à son emplacement d’origine
+      if (originalParent) {
+        if (originalNext && originalNext.parentElement === originalParent) {
+          originalParent.insertBefore(footerMenu, originalNext);
+        } else {
+          originalParent.appendChild(footerMenu);
+        }
+      }
+    }
+  };
+
+  relocateFooterMenu();
+  mqMobile.addEventListener('change', relocateFooterMenu);
+})();
+
+// === Sélection de tous les articles ===
+const articles = document.querySelectorAll('.article');
+
+// Fonction de validation de l’ID d’un article (évite les caractères bizarres)
+function isValidArticleId(id) {
+  return /^article\d+$/.test(id); // autorise uniquement article1, article2, etc.
+}
+
+articles.forEach(article => {
+  const articleId = article.classList[1];
+
+  if (isValidArticleId(articleId) && localStorage.getItem(articleId) === 'lu') {
+    if (!article.querySelector('.lu-indicator')) {
+      const indicator = document.createElement('span');
+      indicator.textContent = '📘 Article lu';
+      indicator.classList.add('lu-indicator');
+      article.querySelector('.article-text').appendChild(indicator);
+    }
+  }
+});
+
+// === Quand on clique sur "Lire la suite" ===
+const lireBtns = document.querySelectorAll('.article-button');
+
+lireBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const article = this.closest('.article');
+    if (article) {
+      const articleId = article.classList[1];
+      if (isValidArticleId(articleId)) {
+        localStorage.setItem(articleId, 'lu');
+
+        if (!article.querySelector('.lu-indicator')) {
+          const indicator = document.createElement('span');
+          indicator.textContent = '📘 Article lu';
+          indicator.classList.add('lu-indicator');
+          article.querySelector('.article-text').appendChild(indicator);
+        } else {
+          article.querySelector('.lu-indicator').style.display = 'inline';
+        }
+      }
+    }
+  });
+});
